@@ -46,3 +46,28 @@ document.getElementById("sveBut").onclick = function save() {
         saveCounter = 0;
     }
 }
+
+document.getElementById("delBut").onclick = function del() {
+    var select = document.getElementById("select").value;
+    if (select == 1)
+    {
+        document.getElementById("li1").innerHTML = '';
+    }
+    else if (select == 2)
+    {
+        document.getElementById("li2").innerHTML = '';
+    }
+    else if (select == 3)
+    {
+        document.getElementById("li3").innerHTML = '';
+    }
+    else if (select == 4)
+    {
+        document.getElementById("li4").innerHTML = '';
+    }
+    else 
+    {
+        document.getElementById("li5").innerHTML = '';
+    }
+    saveCounter -= 1;
+}
