@@ -2,8 +2,6 @@
 var counter = 0;
 var saveCounter = 0;
 
-if (document.getElementById("counterSetting"))
-
 document.getElementById("lwrBut").onclick = function remove() {
     document.getElementById("counter").innerHTML = counter - parseFloat(document.getElementById("counterSetting").value);
     counter = counter - parseFloat(document.getElementById("counterSetting").value);
